@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #dddddd;
+  color: #4aaaa5;
+  margin: 0px;
+  line-height: 1.5;
+  position: relative;
+
+}
+/*top banner headerdefining default header if empty*/
+Header {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  width: 100%;
+  height: 50px;
+  margin-left: 0px;
+  background: #ffffff;
+  font-size: 25px;
+  border-bottom: solid;
+  border-color: #cccccc;
+  padding-left: 10px;
+
+  }
+  h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+  }
+/* new page class to capture core column of page from my header/box1 through content*/
+#page { 
+max-width: 960px;
+padding: 0;
+margin: 0 auto;
+}
+/* box1 is top banner header box in a header limited to 960px to align with core content box*/
+.box1 {
+  max-width: 960px;
+  float: center;
+  background-color:#4aaaa5;
+  margin: 0 auto;
+  font-size: 27px;
+  padding-top: 0px;
+  color: white;
+  
+}
+/* myname is span attributes limited to top banner*/
+#myname {
+ 
+  background-color: #4aaaa5;
+  padding: 10px;
+  float: left;
+  line-height: 1;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  
+}
+/* rightheader is hyperlink text buttons and targeting link specific attributes on a> element */
+.rightHeader a {
+  color: #777777;
+  text-decoration: none;
+  }
+
+.rightHeader {
+  float: right;
+  font-size: 15px;
+  color: #777777;
+  padding-top: 12px;
+}
+/* central content host box fixed to 960 px
+background texture delibrately left blank
+protfolio right paddign adjusted to mimic homework picture of 2X2X1 which was not necessary per Shane conversation 10/2
+}*/
+#relative {
+  position: relative;
+}
+.content {
+  max-width: 748px;
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  float: center;
+  color: #4aaaa5;
+  border: none;
+  border-color: #dddddd;
+ 
+}
+/* core content is core image managemnt to alow float left in core box1 */
+.coreContent {
+  float: left;
+  padding: 0px;
+  margin-right: 10px;
+  
+}
+p {
+  color: #777777;
+  
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  height: 55px;
+  clear: both;
+  background: #666666;
+  border-top: solid;
+  border-width: 5px;
+  border-color: #4aaaa5;
+  text-align: center;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+/* begin unique to contact page
+NameBox*/
+.nameBox {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+  font-size: x-large;
+  padding-top: 5px;
+  color: white;
+ 
+ 
+}
+/* portfolio image setting in central content box*/
+img {
+  padding: 40px 60px 40px 0px;
+  float: left;
+}
+
+div1 {
+  padding: 20px;
+}
+/* begin below from W3 samples
+NameBox*/
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 15%;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#message{
+  Height: 160px;
+  width: 100%;
+  float: none;
+}
+div {
+ /* border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;*/
+}
+/*
+  These rules take effect when the browser's width
+  is either 980px or more.
+*/
+@media screen and (max-width: 980px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #dddddd;
+  }
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be*/
+  body {
+    background-color: #dddddd;
+  }
+
+}
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+@media screen and (max-width: 640px) {
+  /* The body's bg color will be */
+  body {
+    background-color: #dddddd;
+    }
+  #myname {
+       text-align: center;
+       background-color: #4aaaa5;
+       float: none;
+       font-size: 100%;
+       padding: 0;
+    }
+.box1 {
+  float: none;
+  background-color: #4aaaa5;
+  text-align: center;
+}
+Header {
+  padding-left: 0;
+  position: static;
+}
+.content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  .rightHeader {
+      float: none;
+      text-align: center;
+      background-color: #ffffff;
+      font-size: 15px;
+      color: #777777;
+      padding-top: 12px;
+    }
+    .coreContent {
+      float: none;
+    }
+}
+
